@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     margin: 0;
     background: #2f2f2f;
@@ -360,15 +361,48 @@ footer p {
     nav ul{
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
     }
 
     #hero{
         flex-direction: column;
-        text-align: center;
+        text-align: cent
+        
     }
 
     .hero-image img{
-      width: 250px;
+      width: 280px;
+    
+    }
+    
+    .hero-content{
+        width: 100%;
+        max-width: 100%;
+
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        line-height: 1.2;
+
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+    
+     .hero-content p {
+        width: 100%;
+        max-width: 100%;
+
+     }
+     .hero-image{
+        margin-top: 40px;
+     }
+
+     .hero-image img {
+        width: 220px;
+        max-width: 100%;
     }
 
     .about-content{
