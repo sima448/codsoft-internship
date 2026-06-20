@@ -22,9 +22,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-
-    
+    padding: 10px;  
 }
 ul{
     display: flex;
@@ -314,7 +312,7 @@ position: sticky;
     margin-bottom: 10x;
 }
 
-#contect .line {
+#contact .line {
     margin: 0 auto 25px;
 }
 #contact p{
@@ -350,12 +348,22 @@ footer p {
     font-size: 14px;
 }
 
-
 @media (max-width: 768px){
+
+    body{
+        padding-top: 0;
+    }
+
+    .wrapper{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
 
     nav{
         flex-direction: column;
         gap: 15px;
+        padding: 20px;
     }
 
     nav ul{
@@ -366,43 +374,44 @@ footer p {
 
     #hero{
         flex-direction: column;
-        text-align: cent
-        
+        text-align: center;
+        padding: 40px 20px 0;   /* bottom padding 0 */
+        gap: 20px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .hero-content{
+        max-width: 100%;
+    }
+
+    .hero-content h1{
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .hero-content h2{
+        font-size: 24px;
+    }
+
+    .hero-content p{
+        max-width: 280px;
+        margin: 0 auto 20px;
+    }
+
+    .hero-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 10px;
     }
 
     .hero-image img{
-      width: 280px;
-    
-    }
-    
-    .hero-content{
-        width: 100%;
-        max-width: 100%;
-
-    }
-
-    .hero-content h1 {
-        font-size: 42px;
-        line-height: 1.2;
-
-    }
-
-    .hero-content h2 {
-        font-size: 28px;
-    }
-    
-     .hero-content p {
-        width: 100%;
-        max-width: 100%;
-
-     }
-     .hero-image{
-        margin-top: 40px;
-     }
-
-     .hero-image img {
         width: 220px;
-        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: -4px;   /* image ko background se chipkane ke liye */
     }
 
     .about-content{
@@ -413,20 +422,20 @@ footer p {
     }
 
     .about-image{
+        width: 220px;
         margin-top: 0;
-
     }
 
-    .skills-container,
-    .project-container{
-        justify-content: center;
+    .about-image img{
+        width: 100%;
+        display: block;
     }
+
     .project-card{
         width: 100%;
         max-width: 350px;
     }
 
-    #hero,
     #about,
     #skills,
     #projects,
@@ -435,3 +444,4 @@ footer p {
         padding: 40px 20px;
     }
 }
+
